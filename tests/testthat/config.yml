@@ -1,0 +1,20 @@
+default:
+  bool: TRUE
+  datafolder: "data"
+  year: 1929
+  yearplus10: "{year + 10}"
+  yearplus20: "{year + 20}"
+  truestring: "{bool}"
+  expr: !expr paste("Ok!")
+  brackets: "[year]"
+  data:
+    input: "{datafolder}/mydf.csv"
+    output: "{datafolder}/clean_{year}.csv"
+  analysis:
+    input: "{data$output}"
+    output: "{datafolder}/analysis_{year}.csv"
+
+
+dev:
+  bool: FALSE
+  year: 2000

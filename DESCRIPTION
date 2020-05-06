@@ -1,0 +1,20 @@
+Package: gonfig
+Type: Package
+Title: Config + Glue
+Version: 0.1.1
+Author: Antoine Mayerowitz
+Maintainer: Antoine Mayerowitz <a.mayerowitz@gmail.com>
+Description: A config wrapper with variable substitution.
+    It basically implements glue within config.
+URL: https://github.com/SuperMayo/gonfig
+BugReports: https://github.com/SuperMayo/gonfig/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: magrittr, purrr, config, glue
+RoxygenNote: 6.1.1
+Suggests: 
+    testthat (>= 2.1.0),
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
